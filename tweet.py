@@ -33,10 +33,10 @@ def connect_twitter():
     Twitter API config
     """
     twitter_stream = twitter.TwitterStream(auth=twitter.OAuth(
-        token = "61503075-fYKicKdZO7Y7OHl061RaDWvrqVxVCcDtkJJxW3II2",
-        token_secret = "GA86rw59sIfKKW2cT3Lk5EuLYmSpbnZLixjVkASxTLqXI",
-        consumer_key = "mmMNQxt1pKJGQHrpwMpysX0OK",
-        consumer_secret = "sfFTyKlUjsELF4kUJwXsGWYPffiMxEUv7hhws7lVUv6rIUDZrX"))
+        token = add_token_here,
+        token_secret = add_token_secret_here,
+        consumer_key = add_consumer_key_here),
+        consumer_secret = add_consumer_secret_here))
     return twitter_stream
 
 def get_next_tweet(twitter_stream):
